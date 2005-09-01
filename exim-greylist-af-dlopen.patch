@@ -1,0 +1,26 @@
+diff -urN exim-greylist-af-0.02.org/local_scan.c exim-greylist-af-0.02/local_scan.c
+--- exim-greylist-af-0.02.org/local_scan.c	2004-08-31 14:02:56.000000000 +0200
++++ exim-greylist-af-0.02/local_scan.c	2005-09-01 19:59:20.716298648 +0200
+@@ -975,6 +975,22 @@
+     return to;
+ }
+ 
++#ifdef DLOPEN_LOCAL_SCAN
++/** Return the verion of the local_scan ABI, if being compiled as a .so */
++int local_scan_version_major(void) {
++    return(LOCAL_SCAN_ABI_VERSION_MAJOR);
++}
++
++int local_scan_version_minor(void) {
++    return(LOCAL_SCAN_ABI_VERSION_MINOR);
++}
++
++/**
++ *      Left over for compatilibility with old patched exims that didn't have
++ *      a version number with minor an major. Keep in mind that it will not work
++ *      with older exim4s (I think 4.11 and above is required)
++ */
++#endif
+ 
+ 
+ /* End of local_scan.c */
