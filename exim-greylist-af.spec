@@ -1,4 +1,5 @@
 Summary:	Greylisting for Exim
+Summary(pl):	Obs³uga "szarych list" dla Exima
 Name:		exim-greylist-af
 Version:	0.02
 Release:	1
@@ -8,13 +9,16 @@ Source0:	http://andrew-ford.com/exim/%{name}-%{version}.tar.gz
 Patch0:		%{name}-dlopen.patch
 URL:		http://andrew-ford.com/exim/
 BuildRequires:	exim-devel
-BuildRequires:	openssl-devel
 BuildRequires:	mysql-devel
+BuildRequires:	openssl-devel
 Requires:	exim >= 2:4.52-4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Greylisting for exim.
+
+%description -l pl
+Obs³uga "szarych list" dla Exima.
 
 %prep
 %setup -q
