@@ -1,5 +1,5 @@
 Summary:	Greylisting for Exim
-Summary(pl.UTF-8):   Obsługa "szarych list" dla Exima
+Summary(pl.UTF-8):	Obsługa "szarych list" dla Exima
 Name:		exim-greylist-af
 Version:	0.02
 Release:	1
