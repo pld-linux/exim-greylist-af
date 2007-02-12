@@ -1,5 +1,5 @@
 Summary:	Greylisting for Exim
-Summary(pl):	Obs≥uga "szarych list" dla Exima
+Summary(pl.UTF-8):   Obs≈Çuga "szarych list" dla Exima
 Name:		exim-greylist-af
 Version:	0.02
 Release:	1
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Greylisting for exim.
 
-%description -l pl
-Obs≥uga "szarych list" dla Exima.
+%description -l pl.UTF-8
+Obs≈Çuga "szarych list" dla Exima.
 
 %prep
 %setup -q
